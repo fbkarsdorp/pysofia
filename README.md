@@ -4,8 +4,9 @@ PySofia is a simple Python wrapper around [sofia-ml](https://code.google.com/p/s
 
 # Install
 
-> python setup.py install
+    python setup.py install
+
 
 or 
 
-> python setup.py develop
+    python setup.py develop
