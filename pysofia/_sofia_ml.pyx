@@ -79,7 +79,7 @@ def train(train_data, int n_features, float alpha, int max_iter,
     elif learner_type == 'sgd-svm':
         learner = SGD_SVM
     else:
-        raise NotImplementedError("No learner type implemented with name %s" % learner)
+        raise NotImplementedError("No learner type implemented with name %s" % learner_type)
 
     if model == 'stochastic':
         StochasticOuterLoop(deref(data), learner, eta, alpha, c,
