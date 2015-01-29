@@ -25,6 +25,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
 #include "sf-data-set.h"
 
@@ -55,6 +56,18 @@ SfDataSet::SfDataSet(const string& file_name,
   }
   
   delete[] local_buffer;
+}
+
+SfDataSet::SfDataSet(const string& vector_strings,
+         int buffer_mb,
+         bool use_bias_term,
+         bool direct_vectors)
+  : use_bias_term_(use_bias_term) {
+  std::stringstream ss(vector_strings);
+  string line_string;
+  while (getline(ss, line_string, '\n')) {
+    AddVector(line_string);
+  }
 }
 
 string SfDataSet::AsString() const {

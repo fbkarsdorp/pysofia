@@ -40,6 +40,7 @@ class SfDataSet {
   // Construct and fill a SfDataSet with data from the given file.
   // Use buffer_mb megabytes for the buffer.
   SfDataSet(const string& file_name, int buffer_mb, bool use_bias_term);
+  SfDataSet(const string& vector_strings, int buffer_mb, bool use_bias_term, bool direct_vectors);
 
   // Debug string.
   string AsString() const;

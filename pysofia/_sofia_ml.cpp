@@ -1249,12 +1249,12 @@ static PyObject *__pyx_tuple__9;
 static PyObject *__pyx_codeobj__8;
 static PyObject *__pyx_codeobj__10;
 
-/* "pysofia/_sofia_ml.pyx":57
+/* "pysofia/_sofia_ml.pyx":58
  * 
  * 
  * def train(train_data, int n_features, float alpha, int max_iter,             # <<<<<<<<<<<<<<
  *           bool fit_intercept, model, float step_probability, eta_type, learner_type):
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
  */
 
 /* Python wrapper */
@@ -1303,46 +1303,46 @@ static PyObject *__pyx_pw_7pysofia_9_sofia_ml_1train(PyObject *__pyx_self, PyObj
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_n_features)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_alpha)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  3:
         if (likely((values[3] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_max_iter)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 3); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  4:
         if (likely((values[4] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_fit_intercept)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 4); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 4); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  5:
         if (likely((values[5] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_model)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 5); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 5); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  6:
         if (likely((values[6] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_step_probability)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 6); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 6); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  7:
         if (likely((values[7] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_eta_type)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 7); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 7); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  8:
         if (likely((values[8] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_learner_type)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 8); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, 8); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "train") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "train") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 9) {
       goto __pyx_L5_argtuple_error;
@@ -1358,18 +1358,18 @@ static PyObject *__pyx_pw_7pysofia_9_sofia_ml_1train(PyObject *__pyx_self, PyObj
       values[8] = PyTuple_GET_ITEM(__pyx_args, 8);
     }
     __pyx_v_train_data = values[0];
-    __pyx_v_n_features = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_n_features == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_alpha = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_alpha == (float)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_max_iter = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_max_iter == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_fit_intercept = __Pyx_PyObject_IsTrue(values[4]); if (unlikely((__pyx_v_fit_intercept == (bool)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_n_features = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_n_features == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_alpha = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_alpha == (float)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_max_iter = __Pyx_PyInt_As_int(values[3]); if (unlikely((__pyx_v_max_iter == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_fit_intercept = __Pyx_PyObject_IsTrue(values[4]); if (unlikely((__pyx_v_fit_intercept == (bool)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
     __pyx_v_model = values[5];
-    __pyx_v_step_probability = __pyx_PyFloat_AsFloat(values[6]); if (unlikely((__pyx_v_step_probability == (float)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_step_probability = __pyx_PyFloat_AsFloat(values[6]); if (unlikely((__pyx_v_step_probability == (float)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
     __pyx_v_eta_type = values[7];
     __pyx_v_learner_type = values[8];
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("train", 1, 9, 9, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("pysofia._sofia_ml.train", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1415,19 +1415,19 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   __pyx_pybuffernd_coef.data = NULL;
   __pyx_pybuffernd_coef.rcbuffer = &__pyx_pybuffer_coef;
 
-  /* "pysofia/_sofia_ml.pyx":59
+  /* "pysofia/_sofia_ml.pyx":60
  * def train(train_data, int n_features, float alpha, int max_iter,
  *           bool fit_intercept, model, float step_probability, eta_type, learner_type):
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)             # <<<<<<<<<<<<<<
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)             # <<<<<<<<<<<<<<
  *     if n_features == 0:
  *         n_features = DIMENSIONALITY
  */
-  __pyx_t_1 = __pyx_convert_string_from_py_(__pyx_v_train_data); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 59; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_v_data = new SfDataSet(__pyx_t_1, __pyx_v_7pysofia_9_sofia_ml_BUFFER_MB, __pyx_v_fit_intercept);
+  __pyx_t_1 = __pyx_convert_string_from_py_(__pyx_v_train_data); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 60; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_v_data = new SfDataSet(__pyx_t_1, __pyx_v_7pysofia_9_sofia_ml_BUFFER_MB, __pyx_v_fit_intercept, 1);
 
-  /* "pysofia/_sofia_ml.pyx":60
+  /* "pysofia/_sofia_ml.pyx":61
  *           bool fit_intercept, model, float step_probability, eta_type, learner_type):
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
  *     if n_features == 0:             # <<<<<<<<<<<<<<
  *         n_features = DIMENSIONALITY
  *     cdef SfWeightVector *weights = new SfWeightVector(n_features)
@@ -1435,8 +1435,8 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   __pyx_t_2 = ((__pyx_v_n_features == 0) != 0);
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":61
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+    /* "pysofia/_sofia_ml.pyx":62
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
  *     if n_features == 0:
  *         n_features = DIMENSIONALITY             # <<<<<<<<<<<<<<
  *     cdef SfWeightVector *weights = new SfWeightVector(n_features)
@@ -1447,7 +1447,7 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   }
   __pyx_L3:;
 
-  /* "pysofia/_sofia_ml.pyx":62
+  /* "pysofia/_sofia_ml.pyx":63
  *     if n_features == 0:
  *         n_features = DIMENSIONALITY
  *     cdef SfWeightVector *weights = new SfWeightVector(n_features)             # <<<<<<<<<<<<<<
@@ -1456,7 +1456,7 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
  */
   __pyx_v_weights = new SfWeightVector(__pyx_v_n_features);
 
-  /* "pysofia/_sofia_ml.pyx":63
+  /* "pysofia/_sofia_ml.pyx":64
  *         n_features = DIMENSIONALITY
  *     cdef SfWeightVector *weights = new SfWeightVector(n_features)
  *     cdef float c = 0.0             # <<<<<<<<<<<<<<
@@ -1465,17 +1465,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
  */
   __pyx_v_c = 0.0;
 
-  /* "pysofia/_sofia_ml.pyx":68
+  /* "pysofia/_sofia_ml.pyx":69
  *     cdef LearnerType learner
  * 
  *     if eta_type == 'pegasos':             # <<<<<<<<<<<<<<
  *         eta = PEGASOS_ETA
  *     elif eta_type == 'basic':
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_eta_type, __pyx_n_s_pegasos, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 68; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_eta_type, __pyx_n_s_pegasos, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 69; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":69
+    /* "pysofia/_sofia_ml.pyx":70
  * 
  *     if eta_type == 'pegasos':
  *         eta = PEGASOS_ETA             # <<<<<<<<<<<<<<
@@ -1486,17 +1486,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L4;
   }
 
-  /* "pysofia/_sofia_ml.pyx":70
+  /* "pysofia/_sofia_ml.pyx":71
  *     if eta_type == 'pegasos':
  *         eta = PEGASOS_ETA
  *     elif eta_type == 'basic':             # <<<<<<<<<<<<<<
  *         eta = BASIC_ETA
  *     elif eta_type == 'constant':
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_eta_type, __pyx_n_s_basic, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 70; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_eta_type, __pyx_n_s_basic, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 71; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":71
+    /* "pysofia/_sofia_ml.pyx":72
  *         eta = PEGASOS_ETA
  *     elif eta_type == 'basic':
  *         eta = BASIC_ETA             # <<<<<<<<<<<<<<
@@ -1507,17 +1507,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L4;
   }
 
-  /* "pysofia/_sofia_ml.pyx":72
+  /* "pysofia/_sofia_ml.pyx":73
  *     elif eta_type == 'basic':
  *         eta = BASIC_ETA
  *     elif eta_type == 'constant':             # <<<<<<<<<<<<<<
  *         eta = CONSTANT
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_eta_type, __pyx_n_s_constant, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 72; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_eta_type, __pyx_n_s_constant, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 73; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":73
+    /* "pysofia/_sofia_ml.pyx":74
  *         eta = BASIC_ETA
  *     elif eta_type == 'constant':
  *         eta = CONSTANT             # <<<<<<<<<<<<<<
@@ -1529,40 +1529,40 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   }
   /*else*/ {
 
-    /* "pysofia/_sofia_ml.pyx":75
+    /* "pysofia/_sofia_ml.pyx":76
  *         eta = CONSTANT
  *     else:
  *         raise NotImplementedError("No eta type implemented with name %s" % eta_type)             # <<<<<<<<<<<<<<
  * 
  *     if learner_type == 'pegasos':
  */
-    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_No_eta_type_implemented_with_nam, __pyx_v_eta_type); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 75; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_No_eta_type_implemented_with_nam, __pyx_v_eta_type); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 76; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 75; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 76; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NotImplementedError, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 75; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NotImplementedError, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 76; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 75; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 76; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_L4:;
 
-  /* "pysofia/_sofia_ml.pyx":77
+  /* "pysofia/_sofia_ml.pyx":78
  *         raise NotImplementedError("No eta type implemented with name %s" % eta_type)
  * 
  *     if learner_type == 'pegasos':             # <<<<<<<<<<<<<<
  *         learner = PEGASOS
  *     elif learner_type == 'sgd-svm':
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_learner_type, __pyx_n_s_pegasos, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 77; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_learner_type, __pyx_n_s_pegasos, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":78
+    /* "pysofia/_sofia_ml.pyx":79
  * 
  *     if learner_type == 'pegasos':
  *         learner = PEGASOS             # <<<<<<<<<<<<<<
@@ -1573,65 +1573,62 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L5;
   }
 
-  /* "pysofia/_sofia_ml.pyx":79
+  /* "pysofia/_sofia_ml.pyx":80
  *     if learner_type == 'pegasos':
  *         learner = PEGASOS
  *     elif learner_type == 'sgd-svm':             # <<<<<<<<<<<<<<
  *         learner = SGD_SVM
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_learner_type, __pyx_kp_s_sgd_svm, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_learner_type, __pyx_kp_s_sgd_svm, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":80
+    /* "pysofia/_sofia_ml.pyx":81
  *         learner = PEGASOS
  *     elif learner_type == 'sgd-svm':
  *         learner = SGD_SVM             # <<<<<<<<<<<<<<
  *     else:
- *         raise NotImplementedError("No learner type implemented with name %s" % learner)
+ *         raise NotImplementedError("No learner type implemented with name %s" % learner_type)
  */
     __pyx_v_learner = sofia_ml::SGD_SVM;
     goto __pyx_L5;
   }
   /*else*/ {
 
-    /* "pysofia/_sofia_ml.pyx":82
+    /* "pysofia/_sofia_ml.pyx":83
  *         learner = SGD_SVM
  *     else:
- *         raise NotImplementedError("No learner type implemented with name %s" % learner)             # <<<<<<<<<<<<<<
+ *         raise NotImplementedError("No learner type implemented with name %s" % learner_type)             # <<<<<<<<<<<<<<
  * 
  *     if model == 'stochastic':
  */
-    __pyx_t_3 = PyInt_FromLong(__pyx_v_learner); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 82; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyString_Format(__pyx_kp_s_No_learner_type_implemented_with, __pyx_v_learner_type); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 83; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyString_Format(__pyx_kp_s_No_learner_type_implemented_with, __pyx_t_3); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 82; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 83; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 82; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
+    __Pyx_GIVEREF(__pyx_t_3);
+    __pyx_t_3 = 0;
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_NotImplementedError, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 83; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
-    PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
-    __Pyx_GIVEREF(__pyx_t_4);
-    __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_NotImplementedError, __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 82; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 82; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_Raise(__pyx_t_3, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 83; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_L5:;
 
-  /* "pysofia/_sofia_ml.pyx":84
- *         raise NotImplementedError("No learner type implemented with name %s" % learner)
+  /* "pysofia/_sofia_ml.pyx":85
+ *         raise NotImplementedError("No learner type implemented with name %s" % learner_type)
  * 
  *     if model == 'stochastic':             # <<<<<<<<<<<<<<
  *         StochasticOuterLoop(deref(data), learner, eta, alpha, c,
  *                             max_iter, weights)
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_n_s_stochastic, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 84; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_n_s_stochastic, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 85; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":85
+    /* "pysofia/_sofia_ml.pyx":86
  * 
  *     if model == 'stochastic':
  *         StochasticOuterLoop(deref(data), learner, eta, alpha, c,             # <<<<<<<<<<<<<<
@@ -1642,17 +1639,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L6;
   }
 
-  /* "pysofia/_sofia_ml.pyx":87
+  /* "pysofia/_sofia_ml.pyx":88
  *         StochasticOuterLoop(deref(data), learner, eta, alpha, c,
  *                             max_iter, weights)
  *     elif model == 'balanced-stochastic':             # <<<<<<<<<<<<<<
  *         BalancedStochasticOuterLoop(deref(data), learner, eta, alpha, c,
  *                                     max_iter, weights)
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_kp_s_balanced_stochastic, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 87; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_kp_s_balanced_stochastic, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":88
+    /* "pysofia/_sofia_ml.pyx":89
  *                             max_iter, weights)
  *     elif model == 'balanced-stochastic':
  *         BalancedStochasticOuterLoop(deref(data), learner, eta, alpha, c,             # <<<<<<<<<<<<<<
@@ -1663,17 +1660,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L6;
   }
 
-  /* "pysofia/_sofia_ml.pyx":90
+  /* "pysofia/_sofia_ml.pyx":91
  *         BalancedStochasticOuterLoop(deref(data), learner, eta, alpha, c,
  *                                     max_iter, weights)
  *     elif model == 'rank':             # <<<<<<<<<<<<<<
  *         StochasticRankLoop(deref(data), learner, eta, alpha, c,
  *                            max_iter, weights)
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_n_s_rank, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 90; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_n_s_rank, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":91
+    /* "pysofia/_sofia_ml.pyx":92
  *                                     max_iter, weights)
  *     elif model == 'rank':
  *         StochasticRankLoop(deref(data), learner, eta, alpha, c,             # <<<<<<<<<<<<<<
@@ -1684,17 +1681,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L6;
   }
 
-  /* "pysofia/_sofia_ml.pyx":93
+  /* "pysofia/_sofia_ml.pyx":94
  *         StochasticRankLoop(deref(data), learner, eta, alpha, c,
  *                            max_iter, weights)
  *     elif model == 'roc':             # <<<<<<<<<<<<<<
  *         StochasticRocLoop(deref(data), learner, eta, alpha, c,
  *                           max_iter, weights)
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_n_s_roc, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 93; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_n_s_roc, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 94; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":94
+    /* "pysofia/_sofia_ml.pyx":95
  *                            max_iter, weights)
  *     elif model == 'roc':
  *         StochasticRocLoop(deref(data), learner, eta, alpha, c,             # <<<<<<<<<<<<<<
@@ -1705,17 +1702,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L6;
   }
 
-  /* "pysofia/_sofia_ml.pyx":96
+  /* "pysofia/_sofia_ml.pyx":97
  *         StochasticRocLoop(deref(data), learner, eta, alpha, c,
  *                           max_iter, weights)
  *     elif model == 'query-norm-rank':             # <<<<<<<<<<<<<<
  *         StochasticQueryNormRankLoop(deref(data), learner, eta, alpha, c,
  *                                     max_iter, weights)
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_kp_s_query_norm_rank, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 96; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_kp_s_query_norm_rank, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 97; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":97
+    /* "pysofia/_sofia_ml.pyx":98
  *                           max_iter, weights)
  *     elif model == 'query-norm-rank':
  *         StochasticQueryNormRankLoop(deref(data), learner, eta, alpha, c,             # <<<<<<<<<<<<<<
@@ -1726,17 +1723,17 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     goto __pyx_L6;
   }
 
-  /* "pysofia/_sofia_ml.pyx":99
+  /* "pysofia/_sofia_ml.pyx":100
  *         StochasticQueryNormRankLoop(deref(data), learner, eta, alpha, c,
  *                                     max_iter, weights)
  *     elif model == 'combined-ranking':             # <<<<<<<<<<<<<<
  *         StochasticClassificationAndRankLoop(deref(data), learner, eta,
  *             alpha, c, step_probability, max_iter, weights)
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_kp_s_combined_ranking, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 99; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_model, __pyx_kp_s_combined_ranking, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 100; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (__pyx_t_2) {
 
-    /* "pysofia/_sofia_ml.pyx":100
+    /* "pysofia/_sofia_ml.pyx":101
  *                                     max_iter, weights)
  *     elif model == 'combined-ranking':
  *         StochasticClassificationAndRankLoop(deref(data), learner, eta,             # <<<<<<<<<<<<<<
@@ -1748,7 +1745,7 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   }
   /*else*/ {
 
-    /* "pysofia/_sofia_ml.pyx":103
+    /* "pysofia/_sofia_ml.pyx":104
  *             alpha, c, step_probability, max_iter, weights)
  *     else:
  *         raise NotImplementedError             # <<<<<<<<<<<<<<
@@ -1756,24 +1753,24 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
  *         # with different learner types.
  */
     __Pyx_Raise(__pyx_builtin_NotImplementedError, 0, 0, 0);
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 103; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 104; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_L6:;
 
-  /* "pysofia/_sofia_ml.pyx":106
+  /* "pysofia/_sofia_ml.pyx":107
  *         # TODO: implement other loop types and combinations
  *         # with different learner types.
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] coef = np.empty(n_features)             # <<<<<<<<<<<<<<
  *     for i in range(n_features):
  *         coef[i] = weights.ValueOf(i)
  */
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_n_features); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_n_features); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_5))) {
     __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_5);
@@ -1785,36 +1782,36 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_GOTREF(__pyx_t_3);
   } else {
-    __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __Pyx_GIVEREF(__pyx_t_6); __pyx_t_6 = NULL;
-    PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_3);
-    __Pyx_GIVEREF(__pyx_t_3);
-    __pyx_t_3 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __Pyx_GOTREF(__pyx_t_4);
+    PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_4);
+    __Pyx_GIVEREF(__pyx_t_4);
+    __pyx_t_4 = 0;
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_8 = ((PyArrayObject *)__pyx_t_4);
+  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_8 = ((PyArrayObject *)__pyx_t_3);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_coef.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_coef = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_coef.rcbuffer->pybuffer.buf = NULL;
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 106; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     } else {__pyx_pybuffernd_coef.diminfo[0].strides = __pyx_pybuffernd_coef.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_coef.diminfo[0].shape = __pyx_pybuffernd_coef.rcbuffer->pybuffer.shape[0];
     }
   }
   __pyx_t_8 = 0;
-  __pyx_v_coef = ((PyArrayObject *)__pyx_t_4);
-  __pyx_t_4 = 0;
+  __pyx_v_coef = ((PyArrayObject *)__pyx_t_3);
+  __pyx_t_3 = 0;
 
-  /* "pysofia/_sofia_ml.pyx":107
+  /* "pysofia/_sofia_ml.pyx":108
  *         # with different learner types.
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] coef = np.empty(n_features)
  *     for i in range(n_features):             # <<<<<<<<<<<<<<
@@ -1825,7 +1822,7 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_i = __pyx_t_10;
 
-    /* "pysofia/_sofia_ml.pyx":108
+    /* "pysofia/_sofia_ml.pyx":109
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] coef = np.empty(n_features)
  *     for i in range(n_features):
  *         coef[i] = weights.ValueOf(i)             # <<<<<<<<<<<<<<
@@ -1840,12 +1837,12 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
     } else if (unlikely(__pyx_t_11 >= __pyx_pybuffernd_coef.diminfo[0].shape)) __pyx_t_12 = 0;
     if (unlikely(__pyx_t_12 != -1)) {
       __Pyx_RaiseBufferIndexError(__pyx_t_12);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 109; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
     *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_coef.rcbuffer->pybuffer.buf, __pyx_t_11, __pyx_pybuffernd_coef.diminfo[0].strides) = __pyx_v_weights->ValueOf(__pyx_v_i);
   }
 
-  /* "pysofia/_sofia_ml.pyx":109
+  /* "pysofia/_sofia_ml.pyx":110
  *     for i in range(n_features):
  *         coef[i] = weights.ValueOf(i)
  *     return coef             # <<<<<<<<<<<<<<
@@ -1857,12 +1854,12 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   __pyx_r = ((PyObject *)__pyx_v_coef);
   goto __pyx_L0;
 
-  /* "pysofia/_sofia_ml.pyx":57
+  /* "pysofia/_sofia_ml.pyx":58
  * 
  * 
  * def train(train_data, int n_features, float alpha, int max_iter,             # <<<<<<<<<<<<<<
  *           bool fit_intercept, model, float step_probability, eta_type, learner_type):
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
  */
 
   /* function exit code */
@@ -1888,11 +1885,11 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_train(CYTHON_UNUSED PyObject *__py
   return __pyx_r;
 }
 
-/* "pysofia/_sofia_ml.pyx":111
+/* "pysofia/_sofia_ml.pyx":112
  *     return coef
  * 
  * def predict(test_data, string coef, bool fit_intercept):             # <<<<<<<<<<<<<<
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  */
 
@@ -1930,16 +1927,16 @@ static PyObject *__pyx_pw_7pysofia_9_sofia_ml_3predict(PyObject *__pyx_self, PyO
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_coef)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("predict", 1, 3, 3, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("predict", 1, 3, 3, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
         case  2:
         if (likely((values[2] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_fit_intercept)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("predict", 1, 3, 3, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("predict", 1, 3, 3, 2); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "predict") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "predict") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -1949,12 +1946,12 @@ static PyObject *__pyx_pw_7pysofia_9_sofia_ml_3predict(PyObject *__pyx_self, PyO
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
     __pyx_v_test_data = values[0];
-    __pyx_v_coef = __pyx_convert_string_from_py_(values[1]); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_fit_intercept = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_fit_intercept == (bool)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_coef = __pyx_convert_string_from_py_(values[1]); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_fit_intercept = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_fit_intercept == (bool)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("predict", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("predict", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("pysofia._sofia_ml.predict", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1998,27 +1995,27 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
   __pyx_pybuffernd_out.data = NULL;
   __pyx_pybuffernd_out.rcbuffer = &__pyx_pybuffer_out;
 
-  /* "pysofia/_sofia_ml.pyx":112
+  /* "pysofia/_sofia_ml.pyx":113
  * 
  * def predict(test_data, string coef, bool fit_intercept):
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)             # <<<<<<<<<<<<<<
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)             # <<<<<<<<<<<<<<
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  *     cdef vector[float] *predictions = new vector[float]()
  */
-  __pyx_t_1 = __pyx_convert_string_from_py_(__pyx_v_test_data); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_v_data = new SfDataSet(__pyx_t_1, __pyx_v_7pysofia_9_sofia_ml_BUFFER_MB, __pyx_v_fit_intercept);
+  __pyx_t_1 = __pyx_convert_string_from_py_(__pyx_v_test_data); if (unlikely(PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 113; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_v_data = new SfDataSet(__pyx_t_1, __pyx_v_7pysofia_9_sofia_ml_BUFFER_MB, __pyx_v_fit_intercept, 1);
 
-  /* "pysofia/_sofia_ml.pyx":113
+  /* "pysofia/_sofia_ml.pyx":114
  * def predict(test_data, string coef, bool fit_intercept):
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)             # <<<<<<<<<<<<<<
  *     cdef vector[float] *predictions = new vector[float]()
  *     SvmPredictionsOnTestSet(deref(data), deref(weights), predictions)
  */
   __pyx_v_weights = new SfWeightVector(__pyx_v_coef);
 
-  /* "pysofia/_sofia_ml.pyx":114
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+  /* "pysofia/_sofia_ml.pyx":115
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  *     cdef vector[float] *predictions = new vector[float]()             # <<<<<<<<<<<<<<
  *     SvmPredictionsOnTestSet(deref(data), deref(weights), predictions)
@@ -2028,11 +2025,11 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
     __pyx_t_2 = new std::vector<float> ();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 114; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 115; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_v_predictions = __pyx_t_2;
 
-  /* "pysofia/_sofia_ml.pyx":115
+  /* "pysofia/_sofia_ml.pyx":116
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  *     cdef vector[float] *predictions = new vector[float]()
  *     SvmPredictionsOnTestSet(deref(data), deref(weights), predictions)             # <<<<<<<<<<<<<<
@@ -2041,19 +2038,19 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
  */
   sofia_ml::SvmPredictionsOnTestSet((*__pyx_v_data), (*__pyx_v_weights), __pyx_v_predictions);
 
-  /* "pysofia/_sofia_ml.pyx":116
+  /* "pysofia/_sofia_ml.pyx":117
  *     cdef vector[float] *predictions = new vector[float]()
  *     SvmPredictionsOnTestSet(deref(data), deref(weights), predictions)
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] out = np.empty(predictions.size())             # <<<<<<<<<<<<<<
  *     for i in range(predictions.size()):
  *         out[i] = predictions.at(i)
  */
-  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_empty); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_FromSize_t(__pyx_v_predictions->size()); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyInt_FromSize_t(__pyx_v_predictions->size()); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -2066,28 +2063,28 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
-    __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __Pyx_GIVEREF(__pyx_t_6); __pyx_t_6 = NULL;
     PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_t_8 = ((PyArrayObject *)__pyx_t_3);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_out.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_5numpy_float64_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_out = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_out.rcbuffer->pybuffer.buf = NULL;
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 116; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 117; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     } else {__pyx_pybuffernd_out.diminfo[0].strides = __pyx_pybuffernd_out.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_out.diminfo[0].shape = __pyx_pybuffernd_out.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -2095,7 +2092,7 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
   __pyx_v_out = ((PyArrayObject *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pysofia/_sofia_ml.pyx":117
+  /* "pysofia/_sofia_ml.pyx":118
  *     SvmPredictionsOnTestSet(deref(data), deref(weights), predictions)
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] out = np.empty(predictions.size())
  *     for i in range(predictions.size()):             # <<<<<<<<<<<<<<
@@ -2106,7 +2103,7 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_i = __pyx_t_10;
 
-    /* "pysofia/_sofia_ml.pyx":118
+    /* "pysofia/_sofia_ml.pyx":119
  *     cdef np.ndarray[ndim=1, dtype=np.float64_t] out = np.empty(predictions.size())
  *     for i in range(predictions.size()):
  *         out[i] = predictions.at(i)             # <<<<<<<<<<<<<<
@@ -2117,12 +2114,12 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
     if (unlikely(__pyx_t_11 >= (size_t)__pyx_pybuffernd_out.diminfo[0].shape)) __pyx_t_12 = 0;
     if (unlikely(__pyx_t_12 != -1)) {
       __Pyx_RaiseBufferIndexError(__pyx_t_12);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 118; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 119; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
     *__Pyx_BufPtrStrided1d(__pyx_t_5numpy_float64_t *, __pyx_pybuffernd_out.rcbuffer->pybuffer.buf, __pyx_t_11, __pyx_pybuffernd_out.diminfo[0].strides) = __pyx_v_predictions->at(__pyx_v_i);
   }
 
-  /* "pysofia/_sofia_ml.pyx":119
+  /* "pysofia/_sofia_ml.pyx":120
  *     for i in range(predictions.size()):
  *         out[i] = predictions.at(i)
  *     return out             # <<<<<<<<<<<<<<
@@ -2132,11 +2129,11 @@ static PyObject *__pyx_pf_7pysofia_9_sofia_ml_2predict(CYTHON_UNUSED PyObject *_
   __pyx_r = ((PyObject *)__pyx_v_out);
   goto __pyx_L0;
 
-  /* "pysofia/_sofia_ml.pyx":111
+  /* "pysofia/_sofia_ml.pyx":112
  *     return coef
  * 
  * def predict(test_data, string coef, bool fit_intercept):             # <<<<<<<<<<<<<<
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  */
 
@@ -4309,8 +4306,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_NotImplementedError = __Pyx_GetBuiltinName(__pyx_n_s_NotImplementedError); if (!__pyx_builtin_NotImplementedError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 75; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 107; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_NotImplementedError = __Pyx_GetBuiltinName(__pyx_n_s_NotImplementedError); if (!__pyx_builtin_NotImplementedError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 76; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 108; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) {__pyx_filename = __pyx_f[1]; __pyx_lineno = 215; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) {__pyx_filename = __pyx_f[1]; __pyx_lineno = 799; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   return 0;
@@ -4388,29 +4385,29 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "pysofia/_sofia_ml.pyx":57
+  /* "pysofia/_sofia_ml.pyx":58
  * 
  * 
  * def train(train_data, int n_features, float alpha, int max_iter,             # <<<<<<<<<<<<<<
  *           bool fit_intercept, model, float step_probability, eta_type, learner_type):
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
  */
-  __pyx_tuple__7 = PyTuple_Pack(16, __pyx_n_s_train_data, __pyx_n_s_n_features, __pyx_n_s_alpha, __pyx_n_s_max_iter, __pyx_n_s_fit_intercept, __pyx_n_s_model, __pyx_n_s_step_probability, __pyx_n_s_eta_type, __pyx_n_s_learner_type, __pyx_n_s_data, __pyx_n_s_weights, __pyx_n_s_c, __pyx_n_s_i, __pyx_n_s_eta, __pyx_n_s_learner, __pyx_n_s_coef); if (unlikely(!__pyx_tuple__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__7 = PyTuple_Pack(16, __pyx_n_s_train_data, __pyx_n_s_n_features, __pyx_n_s_alpha, __pyx_n_s_max_iter, __pyx_n_s_fit_intercept, __pyx_n_s_model, __pyx_n_s_step_probability, __pyx_n_s_eta_type, __pyx_n_s_learner_type, __pyx_n_s_data, __pyx_n_s_weights, __pyx_n_s_c, __pyx_n_s_i, __pyx_n_s_eta, __pyx_n_s_learner, __pyx_n_s_coef); if (unlikely(!__pyx_tuple__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(9, 0, 16, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_folgert_local_pysofia_pys, __pyx_n_s_train, 57, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(9, 0, 16, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_folgert_local_pysofia_pys, __pyx_n_s_train, 58, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "pysofia/_sofia_ml.pyx":111
+  /* "pysofia/_sofia_ml.pyx":112
  *     return coef
  * 
  * def predict(test_data, string coef, bool fit_intercept):             # <<<<<<<<<<<<<<
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  */
-  __pyx_tuple__9 = PyTuple_Pack(8, __pyx_n_s_test_data, __pyx_n_s_coef, __pyx_n_s_fit_intercept, __pyx_n_s_data, __pyx_n_s_weights, __pyx_n_s_predictions, __pyx_n_s_out, __pyx_n_s_i); if (unlikely(!__pyx_tuple__9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__9 = PyTuple_Pack(8, __pyx_n_s_test_data, __pyx_n_s_coef, __pyx_n_s_fit_intercept, __pyx_n_s_data, __pyx_n_s_weights, __pyx_n_s_predictions, __pyx_n_s_out, __pyx_n_s_i); if (unlikely(!__pyx_tuple__9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_folgert_local_pysofia_pys, __pyx_n_s_predict, 111, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(3, 0, 8, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_Users_folgert_local_pysofia_pys, __pyx_n_s_predict, 112, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -4552,28 +4549,28 @@ PyMODINIT_FUNC PyInit__sofia_ml(void)
  */
   __pyx_v_7pysofia_9_sofia_ml_DIMENSIONALITY = 100000;
 
-  /* "pysofia/_sofia_ml.pyx":57
+  /* "pysofia/_sofia_ml.pyx":58
  * 
  * 
  * def train(train_data, int n_features, float alpha, int max_iter,             # <<<<<<<<<<<<<<
  *           bool fit_intercept, model, float step_probability, eta_type, learner_type):
- *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_7pysofia_9_sofia_ml_1train, NULL, __pyx_n_s_pysofia__sofia_ml); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_7pysofia_9_sofia_ml_1train, NULL, __pyx_n_s_pysofia__sofia_ml); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_train, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_train, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pysofia/_sofia_ml.pyx":111
+  /* "pysofia/_sofia_ml.pyx":112
  *     return coef
  * 
  * def predict(test_data, string coef, bool fit_intercept):             # <<<<<<<<<<<<<<
- *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+ *     cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
  *     cdef SfWeightVector *weights = new SfWeightVector(coef)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_7pysofia_9_sofia_ml_3predict, NULL, __pyx_n_s_pysofia__sofia_ml); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_7pysofia_9_sofia_ml_3predict, NULL, __pyx_n_s_pysofia__sofia_ml); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_predict, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 111; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_predict, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 112; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "pysofia/_sofia_ml.pyx":1

@@ -13,6 +13,7 @@ cdef extern from "src/sofia-ml-methods.h":
     cdef cppclass SfDataSet:
         SfDataSet(bool)
         SfDataSet(string, int, bool)
+        SfDataSet(string, int, bool, bool)
 
     cdef cppclass SfWeightVector:
         SfWeightVector(int)
@@ -56,7 +57,7 @@ cdef extern from "src/sofia-ml-methods.h" namespace "sofia_ml":
 
 def train(train_data, int n_features, float alpha, int max_iter, 
           bool fit_intercept, model, float step_probability, eta_type, learner_type):
-    cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept)
+    cdef SfDataSet *data = new SfDataSet(train_data, BUFFER_MB, fit_intercept, True)
     if n_features == 0:
         n_features = DIMENSIONALITY
     cdef SfWeightVector *weights = new SfWeightVector(n_features)
@@ -109,7 +110,7 @@ def train(train_data, int n_features, float alpha, int max_iter,
     return coef
 
 def predict(test_data, string coef, bool fit_intercept):
-    cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept)
+    cdef SfDataSet *data = new SfDataSet(test_data, BUFFER_MB, fit_intercept, True)
     cdef SfWeightVector *weights = new SfWeightVector(coef)
     cdef vector[float] *predictions = new vector[float]()
     SvmPredictionsOnTestSet(deref(data), deref(weights), predictions)

@@ -1,4 +1,4 @@
-import tempfile
+import cStringIO as StringIO
 
 import numpy as np
 from sklearn import base, datasets
@@ -13,10 +13,11 @@ def sgd_train(name, X, y, query_id, alpha, n_features=0, eta_type='pegasos',
         coef = _sofia_ml.train(X, n_features, alpha, max_iter, True,
                                model, step_probability, eta_type, learner)
     else:
-        with open(name, "w") as f:
-            datasets.dump_svmlight_file(X, y, f.name, zero_based=False, query_id=query_id)
-            coef = _sofia_ml.train(f.name, n_features, alpha, max_iter, True,
-                                   model, step_probability, eta_type, learner)
+        f = StringIO.StringIO()
+        datasets.dump_svmlight_file(X, y, f, zero_based=False, query_id=query_id)
+        coef = _sofia_ml.train(f.getvalue(), n_features, alpha, max_iter, True,
+                               model, step_probability, eta_type, learner)
+        f.close()
     return coef
 
 def sgd_predict(name, X, coef, y=None):
@@ -24,10 +25,11 @@ def sgd_predict(name, X, coef, y=None):
     if isinstance(X, basestring):
         prediction = _sofia_ml.predict(X, string_coef, True)
     else:
-        with open(name, 'w') as f:
-            y = np.ones(X.shape[0]) if y is None else y
-            datasets.dump_svmlight_file(X, y, f.name, zero_based=False, query_id=np.ones(X.shape[0]))
-            prediction = _sofia_ml.predict(f.name, string_coef, True)
+        f = StringIO.StringIO()
+        y = np.ones(X.shape[0]) if y is None else y
+        datasets.dump_svmlight_file(X, y, f, zero_based=False, query_id=np.ones(X.shape[0]))
+        prediction = _sofia_ml.predict(f.getvalue(), string_coef, True)
+        f.close()
     return prediction
 
 
